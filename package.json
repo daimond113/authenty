@@ -1,0 +1,26 @@
+{
+	"name": "@daimond113/authenty",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/daimond113/authenty.git"
+	},
+	"author": "https://github.com/daimond113/",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/daimond113/authenty/issues"
+	},
+	"homepage": "https://github.com/daimond113/authenty#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"mongoose": "^5.11.12"
+	},
+	"devDependencies": {
+		"typescript": "^4.1.3"
+	}
+}
