@@ -52,3 +52,4 @@ Invalid arguments (or none) are given
 </ol>
 
 <h2><b>Got any issues? Report them on <a href="https://github.com/daimond113/authenty/issues">GitHub/Issues</a></b><h2>
+    <h1><a href="https://discord.gg/hTanCT5JMp">Our discord!</a></h1>
