@@ -3,6 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/daimond113/authenty)
 ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@daimond113/authenty)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/daimond113/authenty)
+![Discord](https://img.shields.io/discord/799341812686127134?color=%237289da&label=Discord&logo=discord)
 <h2><b>How to install</b></h2>
 To install, you need to have <a href="https://nodejs.org/en/">Node.js</a> then, <br/>
 Run `npm i @daimond113/authenty`
