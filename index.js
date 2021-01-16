@@ -20,7 +20,7 @@ Schema.methods.isValidPassword = async function(password) {
 	try {
 		return await bcrypt.compare(password, this.password)
 	} catch (error) {
-		throw new Error('Invalid password!')
+		throw new Error(error)
 	}
 }
 
@@ -62,7 +62,6 @@ module.exports.login = async (loginOptions) => {
 		throw new Error(`${loginOptions.username} not found!`)
 	}
 
-	console.log('Passed!')
 	return true
 }
 
@@ -89,7 +88,6 @@ module.exports.register = async (loginOptions) => {
 		}
 	}
 	connection = await mongoose.connect(loginOptions.MongoDB_URL, loginOptions.mongooseConnectionOptions)
-	console.log(loginOptions.CollectionName)
 	let User = mongoose.model(loginOptions.CollectionName, Schema)
 	await User.init()
 	const currentUser = await User.findOne({
@@ -101,10 +99,8 @@ module.exports.register = async (loginOptions) => {
 	}
 
 	let hashedPassword
-	console.log(typeof loginOptions.password.toString())
 	try {
 		const salt = await bcrypt.genSalt(10)
-		//console.log(salt, typeof salt)
 		hashedPassword = await bcrypt.hash(loginOptions.password.toString(), salt)
 	} catch (erro) {
 		console.error(erro)
